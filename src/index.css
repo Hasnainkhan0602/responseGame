@@ -222,3 +222,69 @@ header p {
   }
 }
 
+/* Add these styles to your existing index.css file */
+
+#leaderboard {
+  max-width: 50rem;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background: radial-gradient(#0b201d, #021619);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#leaderboard h2 {
+  font-family: 'Handjet', monospace;
+  font-size: 2.5rem;
+  color: #c1e2dd;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+#leaderboard p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#leaderboard ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#leaderboard li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  background-color: #192f2b;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+
+#leaderboard .rank {
+  font-weight: bold;
+  color: #54a399;
+  width: 3rem;
+}
+
+#leaderboard .name {
+  font-weight: bold;
+  text-align: left;
+  flex-grow: 1;
+}
+
+#leaderboard .score {
+  font-weight: bold;
+  color: #00eeff;
+  width: 6rem;
+  text-align: right;
+}
+
+#leaderboard .target {
+  font-size: 0.8rem;
+  color: #a3b1af;
+  width: 8rem;
+  text-align: right;
+}
