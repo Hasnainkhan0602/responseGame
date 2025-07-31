@@ -9,7 +9,6 @@ export default function TimerChallange({ title, targetTime, onWin }) {
 
   const timerIsActive = timeRemaining > 0 && timeRemaining < targetTime * 1000;
 
-  // If time runs out, stop the timer and show the "lost" dialog
   if (timeRemaining <= 0) {
     clearInterval(timer.current);
     dialog.current.showModal();
@@ -28,7 +27,6 @@ export default function TimerChallange({ title, targetTime, onWin }) {
   function handleStop() {
     clearInterval(timer.current);
     dialog.current.showModal();
-    // Report the winning score to App.jsx
     onWin({ score: timeRemaining, targetTime });
   }
 
